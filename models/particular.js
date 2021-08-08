@@ -23,4 +23,4 @@ const particularSchema = new mongoose.Schema({
   },
 });
 
-mongoose.model("Particular", particularSchema);
+module.exports = mongoose.model("Particular", particularSchema);
