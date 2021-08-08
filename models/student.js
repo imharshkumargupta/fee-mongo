@@ -19,6 +19,14 @@ const studentSchema = new mongoose.Schema({
     type: String,
     enum: ["hostel", "transport"],
   },
+  class: {
+    type: String,
+    required: true,
+  },
+  section: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Student", studentSchema);
